@@ -1,8 +1,10 @@
 for (var keys = document.querySelectorAll("#calculator span"),
-        operators = ["+", "-", "x", "÷"],
-        decimalAdded = !1, 
-        i = 0; 
-        i < keys.length; i++) keys[i].onclick = function (e) {
+        operators = ['+', "-", "x", "÷"],
+        decimalAdded = false, 
+        i = 0; i < keys.length; i++) 
+        
+        keys[i].onclick = function (e) {
+        console.log(this);    
     var input = document.querySelector(".screen"),
         inputVal = input.innerHTML,
         btnVal = this.innerHTML,
